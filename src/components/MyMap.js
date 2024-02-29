@@ -6,13 +6,7 @@ const containerStyle = {
   height: '400px'
 }
 
-const center = {
-  lat: 40.702530,
-  lng: -73.925370,
-}
-function MyMap() {
-  
-
+function MyMap({ center }) {
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
     googleMapsApiKey: process.env.REACT_APP_MAP_API_KEY
@@ -22,15 +16,12 @@ function MyMap() {
   const [map, setMap] = React.useState(null)
 
   const onLoad = React.useCallback(function callback(map) {
-    const bounds = new window.google.maps.LatLngBounds(center);
-    map.fitBounds(bounds);
-
-    setMap(map)
-  }, [])
+    setMap(map);
+  }, []);
 
   const onUnmount = React.useCallback(function callback(map) {
-    setMap(null)
-  }, [])
+    setMap(null);
+  }, []);
 
 
   return isLoaded ? (
