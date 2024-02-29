@@ -1,5 +1,5 @@
 import './App.css';
-import { Map } from './components'
+import { MyMap } from './components'
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
         Google Maps React
       </header>
       <div>
-        <Map />
+        <MyMap />
       </div>
     </div>
   );

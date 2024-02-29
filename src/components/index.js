@@ -1,5 +1,5 @@
-import Map from './Map.js'
+import MyMap from './MyMap.js'
 
 export {
-    Map,
+    MyMap,
 };
