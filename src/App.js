@@ -1,5 +1,5 @@
 import './App.css';
-import { MyMap, SearchBar } from './components';
+import { MyMap, Places, SearchBar } from './components';
 import React, { useState } from 'react';
 
 function App() {
@@ -38,7 +38,8 @@ function App() {
       </header>
 
       <div>
-        <MyMap center={center} />
+        {/* <MyMap center={center} /> */}
+        <Places />
       </div>
     </div>
   );
