@@ -23,7 +23,6 @@ function MyMap({ center }) {
     setMap(null);
   }, []);
 
-
   return isLoaded ? (
     <GoogleMap
       mapContainerStyle={containerStyle}
@@ -37,6 +36,5 @@ function MyMap({ center }) {
     </GoogleMap>
 ) : <></>
 }
-
 
 export default MyMap;
